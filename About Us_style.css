@@ -136,6 +136,11 @@ p {
     margin: 20px 0px;
 }
 
+.developer:hover .developerImage {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
 .developerPhotos {
     display: flex;
     justify-content: space-between;
