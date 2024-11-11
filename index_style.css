@@ -1,0 +1,62 @@
+﻿body{
+    display: flex;
+    flex-direction: column;
+    padding: 0px; /*removes page borders*/
+    margin: 0px; /*removes page borders*/
+}
+
+.about-us{
+    display: flex;
+    align-items: center;
+}
+
+.AboutUs{
+    padding: 20px 35px;
+    font-size: 20px;
+}
+
+.header{
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 100px;
+}
+
+.section1{
+    display: flex;
+    justify-content: center;
+}
+
+.websiteBanner {
+    display: flex;
+    justify-content: center;
+}
+
+.biography{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+
+p {
+    font-size: 40px;
+    text-align: center;
+    width: 550px;
+    height: 200px;
+}
+
+.footer {
+    padding: 60px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #1F4024, #07210D);
+}
+
+.group-link {
+    padding: 20px 45px;
+    background: linear-gradient(to bottom, #1575A5, #0C504B);
+    color: white;
+}
+

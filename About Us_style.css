@@ -1,0 +1,58 @@
+﻿body{
+    display: flex;
+    flex-direction: column;
+    padding: 0px; /*removes page borders*/
+    margin: 0px; /*removes page borders*/
+}
+
+.websiteLogo {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+}
+
+.aboutUsTopic {
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutUs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    margin: 0px;
+}
+
+p {
+    font-size: 30px;
+    width: 700px;
+    height: auto;
+    margin-bottom: 0px 0px 70px 0px;
+    border: none;
+}
+
+.developer {
+    margin: 0px 20px;
+}
+
+.developerPhotos {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+}
+
+.footer {
+    margin-top: 200px;
+    padding: 60px 0px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #3A0000, #6B0C0C);
+}
+
+
