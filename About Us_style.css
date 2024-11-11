@@ -1,52 +1,149 @@
 ﻿body{
+    background-color: rgb(15, 15, 15);
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding: 0px; /*removes page borders*/
     margin: 0px; /*removes page borders*/
+}
+
+h1{
+    color: rgb(194, 194, 194);
+    margin: 0px;
+    font-size: 30px;
+}
+
+p {
+    color: rgb(196, 196, 196);
+    margin: 0px;
+    font-size: 25px;
+    height: auto;
 }
 
 .websiteLogo {
     display: flex;
     justify-content: center;
-    padding: 20px 0px;
+    margin: 50px 0px;
 }
 
-.aboutUsTopic {
+.aboutUsContent{
+    width: 100%;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
 }
 
 .aboutUs {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
-h1{
-    margin: 0px;
+.aboutUsTopicOne {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    align-items: center;
 }
 
-p {
-    font-size: 30px;
-    width: 700px;
-    height: auto;
-    margin-bottom: 0px 0px 70px 0px;
-    border: none;
+.temp{
+    display: flex;
+    width: 100%;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 0px;
+}
+
+.aboutUsTopicTwo {
+    display: flex;
+    width: 100%;
+    max-width: 1500px;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.Spark-a-Fart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+.headingOne {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    padding-top: 10px;
+    margin-bottom:20px;
+    width: 350px;
+    height: 40px;
+    background: linear-gradient(to bottom, rgb(104, 22, 22), rgba(173, 52, 52, 0));
+}
+
+.headingTwo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    padding-top: 10px;
+    margin-bottom:20px;
+    width: 280px;
+    height: 40px;
+    background: linear-gradient(to bottom, rgb(43, 107, 226), rgba(255, 255, 255, 0));
+}
+
+.paragraphTopic1 {
+    text-align: center;
+    margin-bottom: 70px;
+    width: 800px;
+}
+
+.paragraphTopic2{
+    margin-bottom: 20px;
+    width: 400px;
+}
+
+.gameVideo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+}
+
+.MTD{ /*meet the developer*/
+    color: rgb(202, 202, 170);
+    text-shadow: 
+        2px 2px 0px black,   /* Shadow on the right and bottom */
+        -2px -2px 0px black, /* Shadow on the left and top */
+        2px -2px 0px black,  /* Shadow on the top-right */
+        -2px 2px 0px black;  /* Shadow on the bottom-left */
+    position:relative;
+    top: -15px;
 }
 
 .developer {
-    margin: 0px 20px;
+    margin: 20px 0px;
 }
 
 .developerPhotos {
-    margin-top: 20px;
     display: flex;
     justify-content: space-between;
     width: 800px;
 }
 
 .footer {
-    margin-top: 200px;
+    width: 100%;
     padding: 60px 0px;
     flex-direction: column;
     display: flex;
