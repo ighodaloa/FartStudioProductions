@@ -1,0 +1,195 @@
+html, body {
+    font-size: 10px;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden; /* keeps page from sideways scrolling */
+}
+html{
+    font-size: 10px;
+}
+
+h2 {
+  font-size: 3.75rem;
+  color: #ffffff;
+}
+
+p {
+  font-size: 3rem;
+}
+
+.home_a {
+  font-size: 4rem;
+  padding: 1.5rem 2rem;
+}
+.home_a a:link {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.home_a a:visited {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.home_a a:hover { /*Dropdown (kinda)*/
+  color: rgb(252, 192, 226);
+  text-decoration: none;
+}
+
+.home_a a:active {
+  color: rgb(235, 45, 153);
+}
+
+@font-face {
+  font-family: 'Ighofonto';
+  src: url(Ighofonto-Regular.ttf);
+}
+
+body {
+    font-family: 'Ighofonto', sans-serif;
+    background-color: #353534;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem; /* space between wrappers */
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  background-color: rgb(40, 40, 40);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: .2rem solid #000000;
+  border-bottom: .2rem solid #000000;
+}
+.header img {
+  height: 5rem;
+  padding-right: 2rem;
+  width: auto;
+}
+.item img {
+  max-width: 60%;
+  height: auto;
+}
+.item p {
+  max-width: 60%;
+  height: auto;
+  font-size: 2rem;
+}
+
+
+
+@media (min-width: 768px) { /*pc screens*/
+    .wrapper {
+        padding: 1.5rem;
+        width: 80%;
+    }
+
+    .wrapper h2 {
+     margin: 0;
+  /* padding: 0;
+  background: rgb(10, 77, 105);
+  border: solid rgb(1, 17, 23) .2rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  display: inline-block; /* makes width shrink to text */
+    } 
+
+    .scrollWrapper {
+  border: solid 0rem rgb(1, 17, 23);
+  border-top-left-radius: 0;      /* top-left stays sharp */
+  border-top-right-radius: 0;  /* top-right rounded */
+  border-bottom-right-radius: 1rem; /* bottom-right rounded */
+  border-bottom-left-radius: 1rem;  /* bottom-left rounded */
+        background-color: rgb(46, 46, 46);
+        width: 100%;
+        overflow-x: auto; /* this creates the horizontal scrollbar */
+        display: flex;
+        gap: .2rem;
+    }
+
+    .item {
+        background-color: rgb(92, 92, 92);
+        min-width: 33%; /* each item takes up some chunk of width */
+        height: 20rem;   /* fixed height so it looks consistent */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .scrollWrapperItemIMGLink {
+      display: flex;
+      justify-content: center;
+    }
+        /* hover effect */
+    .scrollWrapperItemIMGLink:hover {
+      filter: brightness(1.1); /* slightly brighten image or content */
+      color: #007bff; /* example hover text color */
+      transform: scale(1.03); /* subtle zoom-in */
+    }
+
+    /* Active (click) effect */
+    .scrollWrapperItemIMGLink:active {
+      filter: brightness(0.9); /* slight darken */
+      transform: scale(0.97); /* small press-down effect */
+      color: #0056b3; /* darker color on click */
+    }
+}
+
+@media (max-width: 767px) { /*mobile screens*/
+    .wrapper {
+        padding: 1.5rem;
+        width: 90%;
+    }
+
+    .wrapper h2 {
+     margin: 0;
+  /* padding: 0;
+  background: rgb(10, 77, 105);
+  border: solid rgb(1, 17, 23) .2rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  display: inline-block; makes width shrink to text */
+    }
+
+    .scrollWrapper {
+  border: solid 0rem rgb(1, 17, 23);
+  border-top-left-radius: 0;      /* top-left stays sharp */
+  border-top-right-radius: 0;  /* top-right rounded */
+  border-bottom-right-radius: 1rem; /* bottom-right rounded */
+  border-bottom-left-radius: 1rem;  /* bottom-left rounded */
+        background-color: rgb(46, 46, 46);
+        width: 100%;
+        overflow-x: auto; /* this creates the horizontal scrollbar */
+        display: flex;
+        gap: .2rem;
+    }
+
+    .item {
+        background-color: rgb(92, 92, 92);
+        min-width: 75%; /* each item takes up some chunk of width */
+        height: 25rem;   /* fixed height so it looks consistent */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .scrollWrapperItemIMGLink {
+      display: flex;
+      justify-content: center;
+    }
+    /* hover effect */
+    .scrollWrapperItemIMGLink:hover {
+      filter: brightness(1.1); /* slightly brighten image or content */
+      color: #007bff; /* example hover text color */
+      transform: scale(1.03); /* subtle zoom-in */
+    }
+
+    /* Active (click) effect */
+    .scrollWrapperItemIMGLink:active {
+      filter: brightness(0.9); /* slight darken */
+      transform: scale(0.97); /* small press-down effect */
+      color: #0056b3; /* darker color on click */
+    }
+
+}
